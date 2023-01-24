@@ -55,9 +55,7 @@ body{
 }
 
 .cajasTexto:focus{
-  outline-style: solid;
-  outline-color:lightcyan;
-  outline-width: 0.5px;
+  outline: none;
   font-size: 20px;
   transition: transform 0.5s ease-in-out, font-size 0.2s ease-in-out;
 }
