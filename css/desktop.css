@@ -1,0 +1,33 @@
+@media screen and (min-width: 600px){
+  form{
+    display: block;
+    width: 500px;
+  }
+
+  .tituloForm{
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  .cajasTexto{
+    margin-bottom: 20px;
+    padding: 10px 10px 0px 20px;
+    font-size: 20px;
+  }
+
+  .cajasTexto:focus{
+    font-size: 22px;
+  }
+
+  input[type="submit"]{
+    /* color:silver; */
+    /* background:midnightblue; */
+    padding: 10px 25px;
+    border-radius: 3px;
+    text-align: left;
+    margin-top: 25px;
+    border: 1px solid grey;
+    font-size:18px ;
+    cursor: pointer;
+  }
+}
