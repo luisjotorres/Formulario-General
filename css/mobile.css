@@ -71,10 +71,12 @@ input[type="submit"]{
   color:black;
   background-color:transparent;
   padding: 8px 15px;
-  border-radius: 20px;
   text-align: left;
   margin-top: 10px;
   border: 1.3px solid black;
   cursor: pointer;
   font-size: 18PX;
+  border-radius: 20px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
 }
