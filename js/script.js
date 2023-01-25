@@ -12,6 +12,8 @@ window.addEventListener('load',function(e){
       Swal.fire({
         position: 'center',
         icon: 'error',
+        width:'300px',
+        heightAuto:false,
         title: 'Faltan datos',
         showConfirmButton: false,
         timer: 2000
@@ -20,6 +22,8 @@ window.addEventListener('load',function(e){
       Swal.fire({
         position: 'center',
         icon: 'success',
+        width:'300px',
+        heightAuto:false,
         title: `${nombre} ${apellido}`,
         text:`Tienes ${edad} Años de Edad`,
         showConfirmButton: false,
