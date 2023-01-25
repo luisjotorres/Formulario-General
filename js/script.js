@@ -29,6 +29,7 @@ window.addEventListener('load',function(e){
         showConfirmButton: false,
         timer: 3000
       })
+      formulario.reset();
     }
   });
 })
