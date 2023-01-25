@@ -45,7 +45,7 @@ body{
   color: black;
   border: none;
   border-bottom: 1px solid black;
-  background:none;
+  background:rgba(100, 148, 237, 0.5);
   width: 100%;
   margin-top: 3px;
   margin-bottom: 10px;
@@ -55,7 +55,7 @@ body{
 }
 
 .cajasTexto:focus{
-  background:none;
+  background:rgba(100, 148, 237, 0.5);
   outline: none;
   font-size: 20px;
   transition: transform 0.5s ease-in-out, font-size 0.2s ease-in-out;
@@ -80,9 +80,4 @@ input[type="submit"]{
   border-radius: 20px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-}
-
-.error-alert {
-  background-color: #f44336;
-  color: white;
 }
