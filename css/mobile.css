@@ -20,9 +20,9 @@ body{
 }
 
 .container{
-  background:rgba(100, 148, 237, 0.5);
+  background:#B1C9F6;
   border: 1px solid gray;
-  box-shadow: 3px 4px 2px black;
+  box-shadow: 3px 4px 2px silver;
   width: 90%;
   margin: 5px;
   display: flex;
@@ -32,6 +32,11 @@ body{
   margin: 10px auto;
   padding: 25px; 
   font-weight: 500;
+}
+
+form{
+  border: 1px solid red;
+  background: transparent;
 }
 
 .tituloForm{
@@ -45,7 +50,7 @@ body{
   color: black;
   border: none;
   border-bottom: 1px solid black;
-  background:rgba(100, 148, 237, 0.5);
+  background:transparent;
   width: 100%;
   margin-top: 3px;
   margin-bottom: 10px;
@@ -55,7 +60,7 @@ body{
 }
 
 .cajasTexto:focus{
-  background:rgba(100, 148, 237, 0.5);
+  background:transparent;
   outline: none;
   font-size: 20px;
   transition: transform 0.5s ease-in-out, font-size 0.2s ease-in-out;
