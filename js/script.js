@@ -1,15 +1,15 @@
   // Configuracion de los Mensajes SweetAlert
   function mensajeSweetAlert(icon, title, text, timer){
     Swal.fire({
-      position: 'center',
+      position: "center",
       icon: icon,
-      width:'300px',
-      heightAuto:false,
+      width: "300px",
+      heightAuto: false,
       title: title,
       text: text,
       showConfirmButton: false,
-      timer: timer
-    })
+      timer: timer,
+    });
   }
 
   // capturo el formulario
