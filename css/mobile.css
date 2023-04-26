@@ -19,23 +19,14 @@ body{
   margin-top: 20px;
 }
 
-.container{
-  background:#B1C9F6;
+form{
+  margin:20px auto;
+  border: 1px solid red;
+  width: 30%;
+  padding: 20px;
   border: 1px solid gray;
   box-shadow: 3px 4px 2px silver;
-  width: 90%;
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  margin: 10px auto;
-  padding: 25px; 
-  font-weight: 500;
-}
-
-form{
-  background: transparent;
+  background:#B1C9F6;
 }
 
 .tituloForm{
@@ -85,3 +76,28 @@ input[type="submit"]{
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
 }
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(15px, 0, 0);
+  }
+}
+
+
+
