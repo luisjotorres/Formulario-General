@@ -19,10 +19,13 @@ body{
   margin-top: 20px;
 }
 
+.container{
+  margin: 20px auto;
+  max-width: 90%;
+}
+
 form{
-  margin:20px auto;
-  border: 1px solid red;
-  width: 90%;
+  width: 100%;
   padding: 20px;
   border: 1px solid gray;
   box-shadow: 3px 4px 2px silver;
