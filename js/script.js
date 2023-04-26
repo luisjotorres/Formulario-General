@@ -1,3 +1,6 @@
+// *******************************************************************************
+// FUNCIONES
+// *******************************************************************************
 // Funcion que Genera el Sweet Alert
 function mensajeSweetAlert(icon, title, text, timer) {
   Swal.fire({
@@ -9,6 +12,18 @@ function mensajeSweetAlert(icon, title, text, timer) {
     text: text,
     showConfirmButton: false,
     timer: timer,
+  });
+}
+
+// Funcion que asigna el foco al primer campo a llenar
+function foco(campoCont){
+  document.addEventListener("DOMContentLoaded", function() {
+    const primerCampo = document.getElementById("nombre");
+    const segundoCampo = document.getElementById("apellido");
+    const tercerCampo = document.getElementById("edad");
+    if(campoCont===1)primerCampo.focus();
+    if(campoCont===2)segundoCampo.focus();
+    if(campoCont===3)tercerCampo.focus();
   });
 }
 
@@ -28,23 +43,12 @@ function validarFormulario(nombre, apellido, edad) {
   return estado;
 }
 
-// Funcion que mueve el focoal primer campo vacio que encuentra
-function moverFocoAlCampoVacio() {
-  const camposRequeridos = formulario.querySelectorAll("[required]");
-  for (let i = 0; i < camposRequeridos.length; i++) {
-    const campo = camposRequeridos[i];
-    if (campo.value === "") {
-      campo.focus();
-      break;
-    }
-  }
-}
-
-
-
-// Programa Principal
+// *******************************************************************************
+// PROGRAMA PRINCIPAL
+// *******************************************************************************
 // Instancio el formulario
 const formulario = document.getElementById("formulario");
+foco(1);
 // Detecto si se ha presionado el boton enviar del formulario
 formulario.addEventListener("submit", function (e) {
   // Evito el envio instantaneo por error
@@ -53,14 +57,15 @@ formulario.addEventListener("submit", function (e) {
   const { nombre, apellido, edad } = recolectarDatos();
   // Llamo a la función para validar el formulario
   const estado = validarFormulario(nombre, apellido, edad);
+
   if(estado){
     formulario.classList.remove("shake") // remuevo la clase "shake" para que el efecto se pueda repetir
     void formulario.offsetWidth; // forzo la reflow para reiniciar la animación
     formulario.classList.add("shake");
-    moverFocoAlCampoVacio();
+    if(nombre==='' || nombre=== null)foco(1);
   }else{
     mensajeSweetAlert("success","Felicidades!","Datos enviados correctamente!", 3000);
-    formulario.reset()
+    formulario.reset();
   }
 });
 
